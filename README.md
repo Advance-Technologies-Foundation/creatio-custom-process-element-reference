@@ -35,6 +35,12 @@ pwsh ./scripts/Test-Reference.ps1 -EnvironmentName <registered-environment>
 
 The runner reads credentials privately from your local Clio registration. Integration tests execute the installed processes and do not create business records.
 
+Run `pwsh ./scripts/Test-PackageContract.ps1` without an environment or proprietary
+binaries to verify every exported task's explicit directions and error-output types.
+The normal test runner and GitHub CI include this check. Version 0.2.0 corrects the
+v0.1.0 text-task export, which omitted directions for Text, Prefix and FormattedText;
+their schema and parameter identities remain unchanged.
+
 ## Install on another compatible environment
 
 Use a fresh development environment with `CrtProcessDesigner` available. PostgreSQL is verified. Arithmetic also includes an authored MSSQL registration script, but SQL Server installation is not validated.
@@ -44,7 +50,7 @@ clio compress ./packages/UsrCustomProcessElement -d ./artifacts/UsrCustomProcess
 clio push-pkg ./artifacts/UsrCustomProcessElement.gz -e <target>
 ```
 
-The normal package installer builds the configuration and restarts the application. This exact archive installed successfully on a fresh, non-FSM instance without installing ClioGate or issuing a separate compile command. Open a fresh designer session afterward. The package's after-package SQL creates the toolbox entries. Do not run a manual database INSERT as an extra installation step. See [clean-install evidence](docs/clean-install-verification.md).
+The normal package installer builds the configuration and restarts the application. Version 0.1.0 installed successfully on a fresh, non-FSM instance without installing ClioGate or issuing a separate compile command; version 0.2.0 was validated as an upgrade on that retained instance. Open a fresh designer session afterward. The package's after-package SQL creates the toolbox entries. Do not run a manual database INSERT as an extra installation step. See [installation evidence](docs/clean-install-verification.md).
 
 For source development, create/register an exclusive environment, enable file-system development, and link the package:
 
