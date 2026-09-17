@@ -1,0 +1,14 @@
+name: Package metadata contract
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exported task directions and error types
+        shell: pwsh
+        run: ./scripts/Test-PackageContract.ps1

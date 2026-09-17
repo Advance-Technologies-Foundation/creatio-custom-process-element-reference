@@ -2,6 +2,7 @@ param([Parameter(Mandatory)][string]$EnvironmentName)
 $ErrorActionPreference = 'Stop'
 Push-Location (Split-Path $PSScriptRoot -Parent)
 try {
+    & (Join-Path $PSScriptRoot 'Test-PackageContract.ps1')
     # Reuse registered credentials without writing them into the repository or command line.
     $configuration = Get-Content (Join-Path $env:LOCALAPPDATA 'creatio/clio/appsettings.json') -Raw | ConvertFrom-Json
     $target = $configuration.Environments.$EnvironmentName
