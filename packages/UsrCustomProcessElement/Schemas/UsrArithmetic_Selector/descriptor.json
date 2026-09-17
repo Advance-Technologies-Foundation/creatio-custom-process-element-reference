@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "aa3ad754-6e8c-43f5-bbcb-cd3b3d6d5ba5",
+    "Name": "UsrArithmetic_Selector",
+    "ModifiedOnUtc": "\/Date(1789661094000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Arithmetic operation selector",
+    "DependsOn": []
+  }
+}

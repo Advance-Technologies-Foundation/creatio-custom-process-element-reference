@@ -1,0 +1,13 @@
+{
+  "Descriptor": {
+    "UId": "7f8b7355-e8df-406b-9c05-074f16ff7c13",
+    "Name": "UsrArithmeticPropertiesPage",
+    "ModifiedOnUtc": "/Date(1789661164135)/",
+    "Parent": {
+      "UId": "0f347363-31e5-4222-a82e-dcfeda34cbb6",
+      "Name": "ProcessFlowElementPropertiesPage"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "UsrArithmeticPropertiesPage"
+  }
+}

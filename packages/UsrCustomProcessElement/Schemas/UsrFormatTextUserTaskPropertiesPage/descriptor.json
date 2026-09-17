@@ -1,0 +1,13 @@
+{
+  "Descriptor": {
+    "UId": "7963a37e-a250-461d-92d5-45353fa2e70f",
+    "Name": "UsrFormatTextUserTaskPropertiesPage",
+    "ModifiedOnUtc": "/Date(1789652850753)/",
+    "Parent": {
+      "UId": "0f347363-31e5-4222-a82e-dcfeda34cbb6",
+      "Name": "ProcessFlowElementPropertiesPage"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Format text parameters"
+  }
+}

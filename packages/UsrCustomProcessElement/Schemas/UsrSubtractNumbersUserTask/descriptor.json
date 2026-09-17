@@ -1,0 +1,9 @@
+{
+  "Descriptor": {
+    "UId": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+    "Name": "UsrSubtractNumbersUserTask",
+    "ModifiedOnUtc": "/Date(1789661164135)/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "Arithmetic: Subtract"
+  }
+}

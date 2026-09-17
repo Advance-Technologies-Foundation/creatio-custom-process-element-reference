@@ -1,0 +1,9 @@
+{
+  "SqlScript": {
+    "UId": "0400e7f7-fa64-4b8f-87ba-c847588bb437",
+    "Name": "UsrRegisterArithmeticPostgreSql",
+    "DBEngineType": 2,
+    "InstallType": 1,
+    "ModifiedOnUtc": "/Date(1789661164135)/"
+  }
+}

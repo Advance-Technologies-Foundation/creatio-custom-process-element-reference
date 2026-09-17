@@ -1,0 +1,8 @@
+{
+  "Packages": [
+    "UsrCustomProcessElement"
+  ],
+  "ApplicationVersion": "10.1.585.0",
+  "IgnorePackages": [],
+  "ExternalPackages": []
+}

@@ -1,0 +1,13 @@
+{
+  "Descriptor": {
+    "UId": "76823fcb-708d-4276-b1eb-6e87dc4829dc",
+    "Name": "UsrMultiplyNumbersPropertiesPage",
+    "ModifiedOnUtc": "/Date(1789661164135)/",
+    "Parent": {
+      "UId": "7f8b7355-e8df-406b-9c05-074f16ff7c13",
+      "Name": "UsrArithmeticPropertiesPage"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "UsrMultiplyNumbersPropertiesPage"
+  }
+}

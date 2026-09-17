@@ -1,0 +1,21 @@
+{
+  "Name": "UsrCustomProcessElement",
+  "Description": "",
+  "Maintainer": "Customer",
+  "Icon": "",
+  "IconName": "",
+  "Color": "#FFAC07",
+  "Version": "0.1.0",
+  "RequiredPlatformVersion": "8.3.3",
+  "MarketplaceLink": "",
+  "HelpLink": "",
+  "OrderLink": "",
+  "SupportEmail": "",
+  "Code": "UsrCustomProcessElement",
+  "Packages": [
+    {
+      "UId": "f8b850cd-3f43-4028-97fc-5bae40be017d",
+      "Name": "UsrCustomProcessElement"
+    }
+  ]
+}

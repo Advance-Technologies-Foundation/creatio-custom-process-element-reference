@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "906ff128-23ef-4922-ab3a-382902ba13d8",
+    "Name": "UsrArithmetic_Add",
+    "ModifiedOnUtc": "\/Date(1789660338000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Arithmetic add reference",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Format text" />
+			<Item Name="LargeSvgImage" Type="Image" ContentType="Data" FileExtension=".svg" Value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2OSIgaGVpZ2h0PSI1NSIgdmlld0JveD0iMCAwIDY5IDU1Ij48cmVjdCB3aWR0aD0iNjkiIGhlaWdodD0iNTUiIHJ4PSI1IiBmaWxsPSIjNEY3NUMyIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIzIDE0aDIzdjdoLTN2LTRoLTd2MjJoNXYzSDI4di0zaDVWMTdoLTd2NGgtM3oiLz48L3N2Zz4=" />
+			<Item Name="Parameters.ErrorMessage.Caption" Value="Error message" />
+			<Item Name="Parameters.FormattedText.Caption" Value="Formatted text" />
+			<Item Name="Parameters.IsError.Caption" Value="Is error" />
+			<Item Name="Parameters.Prefix.Caption" Value="Prefix" />
+			<Item Name="Parameters.Text.Caption" Value="Text to format" />
+			<Item Name="SmallSvgImage" Type="Image" ContentType="Data" FileExtension=".svg" Value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsPSIjNEY3NUMyIiBkPSJNMiAyaDEydjNoLTFWM0g5djEwaDJ2MUg1di0xaDJWM0gzdjJIMnoiLz48L3N2Zz4=" />
+			<Item Name="TitleSvgImage" Type="Image" ContentType="Data" FileExtension=".svg" Value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MiIgaGVpZ2h0PSI0MiIgdmlld0JveD0iMCAwIDQyIDQyIj48cmVjdCB3aWR0aD0iNDIiIGhlaWdodD0iNDIiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PHBhdGggZmlsbD0iIzRGNzVDMiIgZD0iTTEwIDEwaDIydjZoLTN2LTNoLTZ2MTdoNHYzSDE1di0zaDVWMTNoLTd2M2gtM3oiLz48L3N2Zz4=" />
+		</Items>
+	</Group>
+</Resources>

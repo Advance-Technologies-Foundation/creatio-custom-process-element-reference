@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.CalculateNumbers.Caption" Value="Calculate numbers" />
+			<Item Name="BaseElements.CalculateNumbers.Parameters.ErrorMessage.Caption" Value="Error message" />
+			<Item Name="BaseElements.CalculateNumbers.Parameters.FirstAddend.Caption" Value="FirstAddend" />
+			<Item Name="BaseElements.CalculateNumbers.Parameters.IsError.Caption" Value="Is error" />
+			<Item Name="BaseElements.CalculateNumbers.Parameters.Result.Caption" Value="Result" />
+			<Item Name="BaseElements.CalculateNumbers.Parameters.SecondAddend.Caption" Value="SecondAddend" />
+			<Item Name="BaseElements.CalculationCompletedEnd.Caption" Value="Calculation completed" />
+			<Item Name="BaseElements.CalculationRequestedStart.Caption" Value="Calculation requested" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask1.Caption" Value="Calculate numbers" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask1.Parameters.Dividend.Caption" Value="Dividend" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask1.Parameters.Dividend.DisplayValue" Value="10" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask1.Parameters.Divisor.Caption" Value="Divisor" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask1.Parameters.Divisor.DisplayValue" Value="4" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask1.Parameters.ErrorMessage.Caption" Value="Error message" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask1.Parameters.IsError.Caption" Value="Is error" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask1.Parameters.Result.Caption" Value="Result" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask2.Caption" Value="Calculate numbers" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask2.Parameters.Dividend.Caption" Value="Dividend" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask2.Parameters.Dividend.DisplayValue" Value="10" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask2.Parameters.Divisor.Caption" Value="Divisor" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask2.Parameters.Divisor.DisplayValue" Value="4" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask2.Parameters.ErrorMessage.Caption" Value="Error message" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask2.Parameters.IsError.Caption" Value="Is error" />
+			<Item Name="BaseElements.UsrDivideNumbersUserTask2.Parameters.Result.Caption" Value="Result" />
+			<Item Name="Caption" Value="Arithmetic operation selector" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#[PropertyValue:Caption]#]" />
+		</Items>
+	</Group>
+</Resources>

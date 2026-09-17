@@ -1,0 +1,9 @@
+{
+  "Descriptor": {
+    "UId": "90b35928-3384-482c-800a-49bc0aee4532",
+    "Name": "UsrMultiplyNumbersUserTask",
+    "ModifiedOnUtc": "/Date(1789661164135)/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "Arithmetic: Multiply"
+  }
+}

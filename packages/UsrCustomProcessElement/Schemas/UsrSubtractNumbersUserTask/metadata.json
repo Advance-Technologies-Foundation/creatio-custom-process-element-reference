@@ -1,0 +1,159 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessUserTaskSchemaManager",
+      "UId": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+      "A2": "UsrSubtractNumbersUserTask",
+      "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+      "B1": [
+        {
+          "UId": "2334097b-6a12-4361-a229-e6768fe5b5a2",
+          "A2": "CompleteExecuting",
+          "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "bool",
+          "C2": true,
+          "C3": true,
+          "C4": "return base.CompleteExecuting(parameters);",
+          "C6": [],
+          "C7": [
+            {
+              "UId": "a85227a6-9f46-4386-a2f4-fdf4b41e225c",
+              "A2": "parameters",
+              "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+              "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+              "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+              "AA2": "object[]",
+              "AA3": true
+            }
+          ]
+        },
+        {
+          "UId": "1987e7dc-51e4-4824-8019-27a56fef90cd",
+          "A2": "CancelExecuting",
+          "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "void",
+          "C2": true,
+          "C3": true,
+          "C4": "base.CancelExecuting(parameters);",
+          "C6": [],
+          "C7": [
+            {
+              "UId": "e9b4aa4f-c6d0-468c-9ab6-44c53cb4e9bf",
+              "A2": "parameters",
+              "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+              "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+              "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+              "AA2": "object[]",
+              "AA3": true
+            }
+          ]
+        },
+        {
+          "UId": "025c1eae-7824-465a-8740-f7410b566cad",
+          "A2": "GetExecutionData",
+          "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "string",
+          "C2": true,
+          "C3": true,
+          "C4": "return string.Empty;",
+          "C6": [],
+          "C7": []
+        },
+        {
+          "UId": "d3d19214-505d-4ee8-9f1d-5f74fab8b971",
+          "A2": "GetNotificationData",
+          "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "ProcessElementNotification",
+          "C2": true,
+          "C3": true,
+          "C4": "return base.GetNotificationData();",
+          "C6": [],
+          "C7": []
+        }
+      ],
+      "B2": [],
+      "B3": [],
+      "B6": "f8b850cd-3f43-4028-97fc-5bae40be017d",
+      "B8": "10.1.585.0",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "40351dc8-2db0-4f1c-9ea0-01e426d5c2f7",
+          "A2": "Minuend",
+          "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "L1": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+          "L8": {},
+          "L13": false,
+          "L12": 0,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "13d0021e-abab-4782-a832-c33576f56ed5",
+          "A2": "Subtrahend",
+          "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "L1": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+          "L8": {},
+          "L13": false,
+          "L12": 0,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "74a999cd-ab7a-4a28-8282-2b43d22e6d24",
+          "A2": "Result",
+          "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "L1": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+          "L8": {},
+          "L13": true,
+          "L12": 1,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "3c64faa4-63d4-4d34-8ad9-8f02cbbe82bd",
+          "A2": "IsError",
+          "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
+          "L8": {},
+          "L13": true,
+          "L12": 1,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "b8da2d4f-6223-4a50-81d7-f575c5e7b4c2",
+          "A2": "ErrorMessage",
+          "A3": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "A4": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+          "L1": "c0f04627-4620-4bc0-84e5-9419dc8516b1",
+          "L8": {},
+          "L13": true,
+          "L12": 1,
+          "L11": true
+        }
+      ],
+      "FK4": true,
+      "FK7": true,
+      "FK12": "#287A68",
+      "FK1": "Result = 0m;\nIsError = false;\nErrorMessage = string.Empty;\nvar app = UsrCustomProcessElementApp.UsrCustomProcessElementApp.Instance;\ntry {\n    var result = app.GetRequiredService<UsrCustomProcessElementApp.Arithmetic.ISubtractNumbersHandler>().Calculate(Minuend, Subtrahend);\n    if (result.IsError) {\n        IsError = true;\n        ErrorMessage = string.Join(System.Environment.NewLine, System.Linq.Enumerable.Select(result.Errors, error => error.Description));\n    } else { Result = result.Value; }\n} catch (System.Exception exception) {\n    IsError = true;\n    ErrorMessage = \"Arithmetic operation failed unexpectedly.\";\n    app.GetRequiredService<global::Common.Logging.ILog>().Error(\"Subtract numbers task failed.\", exception);\n}\nreturn true;",
+      "FK2": 1,
+      "FK11": "fbb39cd8-ab38-4136-9a31-da004e5cedb6",
+      "FK13": true,
+      "FK16": true,
+      "FK17": false
+    }
+  }
+}

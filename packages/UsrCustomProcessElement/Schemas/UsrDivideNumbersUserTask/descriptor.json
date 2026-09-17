@@ -1,0 +1,9 @@
+{
+  "Descriptor": {
+    "UId": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+    "Name": "UsrDivideNumbersUserTask",
+    "ModifiedOnUtc": "/Date(1789661164135)/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "Arithmetic: Divide"
+  }
+}

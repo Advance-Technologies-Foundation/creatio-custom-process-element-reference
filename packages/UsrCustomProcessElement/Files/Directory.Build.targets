@@ -1,0 +1,19 @@
+<Project>
+    <ItemGroup Condition="'$(PkgPath)' != ''">
+        <Compile Remove="$(PkgPath)/UsrCustomProcessElement/Assemblies/**" />
+        <Compile Remove="$(PkgPath)/UsrCustomProcessElement/Data/**" />
+        <Compile Remove="$(PkgPath)/UsrCustomProcessElement/SqlScripts/**" />
+        <Compile Remove="$(PkgPath)/UsrCustomProcessElement/Schemas\**" />
+        <Compile Remove="$(PkgPath)/UsrCustomProcessElement/Resources/**" />
+        <EmbeddedResource Remove="$(PkgPath)/UsrCustomProcessElement/Assemblies/**" />
+        <EmbeddedResource Remove="$(PkgPath)/UsrCustomProcessElement/Data/**" />
+        <EmbeddedResource Remove="$(PkgPath)/UsrCustomProcessElement/SqlScripts/**" />
+        <EmbeddedResource Remove="$(PkgPath)/UsrCustomProcessElement/Schemas/**" />
+        <EmbeddedResource Remove="$(PkgPath)/UsrCustomProcessElement/Resources/**" />
+        <None Remove="$(PkgPath)/UsrCustomProcessElement/Assemblies/**" />
+        <None Remove="$(PkgPath)/UsrCustomProcessElement/Data/**" />
+        <None Remove="$(PkgPath)/UsrCustomProcessElement/SqlScripts/**" />
+        <None Remove="$(PkgPath)/UsrCustomProcessElement/Schemas/**" />
+        <None Remove="$(PkgPath)/UsrCustomProcessElement/Resources/**" />
+    </ItemGroup>
+</Project>

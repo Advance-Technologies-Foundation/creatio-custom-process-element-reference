@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "5765fc6a-dcc3-4353-8fec-0dad8469c325",
+    "Name": "UsrArithmetic_Subtract",
+    "ModifiedOnUtc": "\/Date(1789660339000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Arithmetic subtract reference",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessUserTaskSchemaManager",
+      "UId": "90b35928-3384-482c-800a-49bc0aee4532",
+      "A2": "UsrMultiplyNumbersUserTask",
+      "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+      "B1": [
+        {
+          "UId": "91cdc6d5-e9c4-4c0d-a827-0bb3d3775d6d",
+          "A2": "CompleteExecuting",
+          "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "bool",
+          "C2": true,
+          "C3": true,
+          "C4": "return base.CompleteExecuting(parameters);",
+          "C6": [],
+          "C7": [
+            {
+              "UId": "7f2c64b9-c19d-4ee3-97c9-6f821f69e4fd",
+              "A2": "parameters",
+              "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+              "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+              "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+              "AA2": "object[]",
+              "AA3": true
+            }
+          ]
+        },
+        {
+          "UId": "2acbfe85-23c3-438d-845e-860f9413fbe4",
+          "A2": "CancelExecuting",
+          "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "void",
+          "C2": true,
+          "C3": true,
+          "C4": "base.CancelExecuting(parameters);",
+          "C6": [],
+          "C7": [
+            {
+              "UId": "4ecac137-aeb1-47b7-a9bb-ac62af136ae5",
+              "A2": "parameters",
+              "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+              "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+              "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+              "AA2": "object[]",
+              "AA3": true
+            }
+          ]
+        },
+        {
+          "UId": "1069ee34-3cd8-41e2-b422-8213816190c1",
+          "A2": "GetExecutionData",
+          "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "string",
+          "C2": true,
+          "C3": true,
+          "C4": "return string.Empty;",
+          "C6": [],
+          "C7": []
+        },
+        {
+          "UId": "3f65ff78-abe9-493b-ad4a-c481f869d2fc",
+          "A2": "GetNotificationData",
+          "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "ProcessElementNotification",
+          "C2": true,
+          "C3": true,
+          "C4": "return base.GetNotificationData();",
+          "C6": [],
+          "C7": []
+        }
+      ],
+      "B2": [],
+      "B3": [],
+      "B6": "f8b850cd-3f43-4028-97fc-5bae40be017d",
+      "B8": "10.1.585.0",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "bf0ff643-0aff-4685-bdf5-874be42d2a51",
+          "A2": "Multiplicand",
+          "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+          "L1": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+          "L8": {},
+          "L13": false,
+          "L12": 0,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "e0bf3a93-f298-4361-9617-20c29e377363",
+          "A2": "Multiplier",
+          "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+          "L1": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+          "L8": {},
+          "L13": false,
+          "L12": 0,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "060b642f-983e-4ccc-94f8-cdc425a0a11f",
+          "A2": "Result",
+          "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+          "L1": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+          "L8": {},
+          "L13": true,
+          "L12": 1,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "dff9394b-f7ba-451c-8495-ce6123e93ea5",
+          "A2": "IsError",
+          "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+          "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
+          "L8": {},
+          "L13": true,
+          "L12": 1,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "64cacfe6-8b9a-4a40-93e3-528b2d0acbe2",
+          "A2": "ErrorMessage",
+          "A3": "90b35928-3384-482c-800a-49bc0aee4532",
+          "A4": "90b35928-3384-482c-800a-49bc0aee4532",
+          "L1": "c0f04627-4620-4bc0-84e5-9419dc8516b1",
+          "L8": {},
+          "L13": true,
+          "L12": 1,
+          "L11": true
+        }
+      ],
+      "FK4": true,
+      "FK7": true,
+      "FK12": "#287A68",
+      "FK1": "Result = 0m;\nIsError = false;\nErrorMessage = string.Empty;\nvar app = UsrCustomProcessElementApp.UsrCustomProcessElementApp.Instance;\ntry {\n    var result = app.GetRequiredService<UsrCustomProcessElementApp.Arithmetic.IMultiplyNumbersHandler>().Calculate(Multiplicand, Multiplier);\n    if (result.IsError) {\n        IsError = true;\n        ErrorMessage = string.Join(System.Environment.NewLine, System.Linq.Enumerable.Select(result.Errors, error => error.Description));\n    } else { Result = result.Value; }\n} catch (System.Exception exception) {\n    IsError = true;\n    ErrorMessage = \"Arithmetic operation failed unexpectedly.\";\n    app.GetRequiredService<global::Common.Logging.ILog>().Error(\"Multiply numbers task failed.\", exception);\n}\nreturn true;",
+      "FK2": 1,
+      "FK11": "76823fcb-708d-4276-b1eb-6e87dc4829dc",
+      "FK13": true,
+      "FK16": true,
+      "FK17": false
+    }
+  }
+}

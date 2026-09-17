@@ -1,0 +1,19 @@
+﻿{
+  "Descriptor": {
+    "UId": "f8b850cd-3f43-4028-97fc-5bae40be017d",
+    "PackageVersion": "0.1.0",
+    "Name": "UsrCustomProcessElement",
+    "Type": 1,
+    "InstallBehavior": 1,
+    "ModifiedOnUtc": "\/Date(1789651873000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/UsrCustomProcessElement.csproj",
+    "DependsOn": [
+      {
+        "UId": "29996b0e-2b19-27a8-dab4-67fbc00db573",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtProcessDesigner"
+      }
+    ]
+  }
+}

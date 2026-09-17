@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.FormatProvidedText.Caption" Value="Format provided text" />
+			<Item Name="BaseElements.FormatProvidedText.Parameters.ErrorMessage.Caption" Value="Error message" />
+			<Item Name="BaseElements.FormatProvidedText.Parameters.FormattedText.Caption" Value="Formatted text" />
+			<Item Name="BaseElements.FormatProvidedText.Parameters.IsError.Caption" Value="Is error" />
+			<Item Name="BaseElements.FormatProvidedText.Parameters.Prefix.Caption" Value="Prefix" />
+			<Item Name="BaseElements.FormatProvidedText.Parameters.Prefix.DisplayValue" Value="Prefix" />
+			<Item Name="BaseElements.FormatProvidedText.Parameters.Prefix.Value" Value="Demo: " />
+			<Item Name="BaseElements.FormatProvidedText.Parameters.Text.Caption" Value="Text to format" />
+			<Item Name="BaseElements.FormatProvidedText.Parameters.Text.DisplayValue" Value="[#Input text#]" />
+			<Item Name="BaseElements.TextFormattedEnd.Caption" Value="Text formatted" />
+			<Item Name="BaseElements.TextFormattingRequestedStart.Caption" Value="Text formatting requested" />
+			<Item Name="Caption" Value="Format text reference" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#[PropertyValue:Caption]#]" />
+			<Item Name="Parameters.ErrorMessageParameter.Caption" Value="Error message" />
+			<Item Name="Parameters.ErrorMessageParameter.DisplayValue" Value="Error message" />
+			<Item Name="Parameters.FormattedTextParameter.Caption" Value="Formatted text" />
+			<Item Name="Parameters.FormattedTextParameter.DisplayValue" Value="[#Format provided text.Formatted text#]" />
+			<Item Name="Parameters.InputTextParameter.Caption" Value="Input text" />
+			<Item Name="Parameters.IsErrorParameter.Caption" Value="Is error" />
+			<Item Name="Parameters.IsErrorParameter.DisplayValue" Value="Is error" />
+			<Item Name="Parameters.PrefixParameter.Caption" Value="Prefix" />
+			<Item Name="Parameters.PrefixParameter.DisplayValue" Value="Demo: " />
+		</Items>
+	</Group>
+</Resources>

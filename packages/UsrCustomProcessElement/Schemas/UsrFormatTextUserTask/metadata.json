@@ -1,0 +1,76 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessUserTaskSchemaManager",
+      "UId": "1b597245-7f00-41f4-8943-8d1800a8138c",
+      "A2": "UsrFormatTextUserTask",
+      "A5": "f8b850cd-3f43-4028-97fc-5bae40be017d",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "f8b850cd-3f43-4028-97fc-5bae40be017d",
+      "B8": "10.1.585.0",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "323ae0d9-ad8b-4589-a43b-b65fb693b44c",
+          "A2": "FormattedText",
+          "A3": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "A4": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L13": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "a85200e5-c7a1-422b-b42b-5280c55a44f0",
+          "A2": "Prefix",
+          "A3": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "A4": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {}
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "9459b671-5168-45fc-b91b-cdc371efa3fc",
+          "A2": "Text",
+          "A3": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "A4": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {}
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "937e6767-4f50-4230-8b78-dab5b3a6729e",
+          "A2": "IsError",
+          "A3": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "A4": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
+          "L8": {},
+          "L13": true,
+          "L12": 1
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "bf3d6174-f896-4f2d-bf84-c1ed356e30b8",
+          "A2": "ErrorMessage",
+          "A3": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "A4": "1b597245-7f00-41f4-8943-8d1800a8138c",
+          "L1": "c0f04627-4620-4bc0-84e5-9419dc8516b1",
+          "L8": {},
+          "L13": true,
+          "L12": 1
+        }
+      ],
+      "FK1": "            FormattedText = string.Empty;\n            IsError = false;\n            ErrorMessage = string.Empty;\n            var app = UsrCustomProcessElementApp.UsrCustomProcessElementApp.Instance;\n            try {\n                var handler = app.GetRequiredService<IFormatTextHandler>();\n                var result = handler.Format(Text, Prefix);\n                if (result.IsError) {\n                    IsError = true;\n                    ErrorMessage = string.Join(Environment.NewLine, result.Errors.Select(error => error.Description));\n                } else {\n                    FormattedText = result.Value;\n                }\n            } catch (Exception exception) {\n                IsError = true;\n                ErrorMessage = \"Text formatting failed unexpectedly.\";\n                app.GetRequiredService<ILog>().Error(\"Format text user task failed.\", exception);\n            }\n            return true;",
+      "FK2": 1,
+      "FK11": "7963a37e-a250-461d-92d5-45353fa2e70f",
+      "FK4": true,
+      "FK7": true,
+      "FK12": "#4F75C2",
+      "FK13": true,
+      "FK16": true,
+      "FK17": false
+    }
+  }
+}

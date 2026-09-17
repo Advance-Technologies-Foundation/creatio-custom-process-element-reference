@@ -1,0 +1,41 @@
+{
+  "basePage": "7f8b7355-e8df-406b-9c05-074f16ff7c13",
+  "sqlPg": "0400e7f7-fa64-4b8f-87ba-c847588bb437",
+  "sqlMs": "b6d1826e-91cc-482c-9f44-80496d9db9fa",
+  "pages": {
+    "Add": "4b60e317-86ce-40f6-979b-dfb292e2c7f8",
+    "Subtract": "fbb39cd8-ab38-4136-9a31-da004e5cedb6",
+    "Multiply": "76823fcb-708d-4276-b1eb-6e87dc4829dc",
+    "Divide": "f91fde7f-9e74-4bb3-a787-b9dfa7eb4923"
+  },
+  "tasks": [
+    {
+      "op": "Add",
+      "name": "UsrAddNumbersUserTask",
+      "uid": "d3ad1be6-6c0f-4c80-a4a4-5f1f1e2df7ea",
+      "page": "UsrAddNumbersPropertiesPage",
+      "pageUId": "4b60e317-86ce-40f6-979b-dfb292e2c7f8"
+    },
+    {
+      "op": "Subtract",
+      "name": "UsrSubtractNumbersUserTask",
+      "uid": "caae8936-c70a-4023-8a61-837b1d5c57fc",
+      "page": "UsrSubtractNumbersPropertiesPage",
+      "pageUId": "fbb39cd8-ab38-4136-9a31-da004e5cedb6"
+    },
+    {
+      "op": "Multiply",
+      "name": "UsrMultiplyNumbersUserTask",
+      "uid": "90b35928-3384-482c-800a-49bc0aee4532",
+      "page": "UsrMultiplyNumbersPropertiesPage",
+      "pageUId": "76823fcb-708d-4276-b1eb-6e87dc4829dc"
+    },
+    {
+      "op": "Divide",
+      "name": "UsrDivideNumbersUserTask",
+      "uid": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+      "page": "UsrDivideNumbersPropertiesPage",
+      "pageUId": "f91fde7f-9e74-4bb3-a787-b9dfa7eb4923"
+    }
+  ]
+}

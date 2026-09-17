@@ -1,0 +1,9 @@
+{
+  "SqlScript": {
+    "UId": "db3bd330-1d25-4aa3-a1d6-9d80cf64f434",
+    "Name": "UsrRegisterFormatTextMsSql",
+    "DBEngineType": 0,
+    "InstallType": 1,
+    "ModifiedOnUtc": "2026-09-17T13:47:30.753Z"
+  }
+}

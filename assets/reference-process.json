@@ -1,0 +1,64 @@
+{
+  "parameters": [
+    {
+      "caption": "Input text",
+      "type": "Text",
+      "name": "InputTextParameter",
+      "direction": "In"
+    },
+    {
+      "caption": "Formatted text",
+      "type": "Text",
+      "name": "FormattedTextParameter",
+      "direction": "Out"
+    }
+  ],
+  "packageName": "UsrCustomProcessElement",
+  "elements": [
+    {
+      "caption": "Text formatting requested",
+      "type": "startEvent",
+      "name": "TextFormattingRequestedStart"
+    },
+    {
+      "caption": "Format provided text",
+      "type": "userTask",
+      "userTaskName": "UsrFormatTextUserTask",
+      "name": "FormatProvidedText"
+    },
+    {
+      "caption": "Text formatted",
+      "type": "endEvent",
+      "name": "TextFormattedEnd"
+    }
+  ],
+  "caption": "Format text reference",
+  "mappings": [
+    {
+      "elementName": "FormatProvidedText",
+      "processParameter": "InputTextParameter",
+      "elementParameter": "Text"
+    },
+    {
+      "elementName": "FormatProvidedText",
+      "value": "Hello, ",
+      "elementParameter": "Prefix"
+    },
+    {
+      "targetProcessParameter": "FormattedTextParameter",
+      "sourceElementParameter": "FormattedText",
+      "sourceElement": "FormatProvidedText"
+    }
+  ],
+  "name": "UsrText_Format",
+  "flows": [
+    {
+      "target": "FormatProvidedText",
+      "source": "TextFormattingRequestedStart"
+    },
+    {
+      "target": "TextFormattedEnd",
+      "source": "FormatProvidedText"
+    }
+  ]
+}

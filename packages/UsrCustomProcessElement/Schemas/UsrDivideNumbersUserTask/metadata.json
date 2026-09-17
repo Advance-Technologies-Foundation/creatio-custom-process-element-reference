@@ -1,0 +1,159 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessUserTaskSchemaManager",
+      "UId": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+      "A2": "UsrDivideNumbersUserTask",
+      "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+      "B1": [
+        {
+          "UId": "7780140e-182c-4d1a-9a79-f0edef658370",
+          "A2": "CompleteExecuting",
+          "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "bool",
+          "C2": true,
+          "C3": true,
+          "C4": "return base.CompleteExecuting(parameters);",
+          "C6": [],
+          "C7": [
+            {
+              "UId": "2e9b9e5b-bc2c-45f5-99a6-d57d79bcae3b",
+              "A2": "parameters",
+              "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+              "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+              "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+              "AA2": "object[]",
+              "AA3": true
+            }
+          ]
+        },
+        {
+          "UId": "a224652c-ce6d-4fe1-9178-e4bc5ca72601",
+          "A2": "CancelExecuting",
+          "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "void",
+          "C2": true,
+          "C3": true,
+          "C4": "base.CancelExecuting(parameters);",
+          "C6": [],
+          "C7": [
+            {
+              "UId": "21bea8ed-36ed-4ba3-a0f2-d231d0963d9d",
+              "A2": "parameters",
+              "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+              "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+              "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+              "AA2": "object[]",
+              "AA3": true
+            }
+          ]
+        },
+        {
+          "UId": "fb5f2246-44ef-4fe3-a443-8a1b3ce7da74",
+          "A2": "GetExecutionData",
+          "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "string",
+          "C2": true,
+          "C3": true,
+          "C4": "return string.Empty;",
+          "C6": [],
+          "C7": []
+        },
+        {
+          "UId": "39290da7-b9c9-4df2-b807-51e1c90003c3",
+          "A2": "GetNotificationData",
+          "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A5": "89f15dfb-b3d3-458f-8422-76be65f72352",
+          "C1": "ProcessElementNotification",
+          "C2": true,
+          "C3": true,
+          "C4": "return base.GetNotificationData();",
+          "C6": [],
+          "C7": []
+        }
+      ],
+      "B2": [],
+      "B3": [],
+      "B6": "f8b850cd-3f43-4028-97fc-5bae40be017d",
+      "B8": "10.1.585.0",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "65b12066-d14a-43f0-ad6f-28eabf233676",
+          "A2": "Dividend",
+          "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "L1": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+          "L8": {},
+          "L13": false,
+          "L12": 0,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "70f10948-d02d-46b4-8f3b-f41d6ae15cbf",
+          "A2": "Divisor",
+          "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "L1": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+          "L8": {},
+          "L13": false,
+          "L12": 0,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "406ee30d-bbeb-41b8-b647-f86e080dd15f",
+          "A2": "Result",
+          "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "L1": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+          "L8": {},
+          "L13": true,
+          "L12": 1,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "f2bf4e7a-2d27-4685-97db-e91d53480c0f",
+          "A2": "IsError",
+          "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
+          "L8": {},
+          "L13": true,
+          "L12": 1,
+          "L11": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "a13c7829-6075-4543-a838-a5aad887d45c",
+          "A2": "ErrorMessage",
+          "A3": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "A4": "07fbe6d8-5088-403a-a9f6-2a4320dc8f9c",
+          "L1": "c0f04627-4620-4bc0-84e5-9419dc8516b1",
+          "L8": {},
+          "L13": true,
+          "L12": 1,
+          "L11": true
+        }
+      ],
+      "FK4": true,
+      "FK7": true,
+      "FK12": "#287A68",
+      "FK1": "Result = 0m;\nIsError = false;\nErrorMessage = string.Empty;\nvar app = UsrCustomProcessElementApp.UsrCustomProcessElementApp.Instance;\ntry {\n    var result = app.GetRequiredService<UsrCustomProcessElementApp.Arithmetic.IDivideNumbersHandler>().Calculate(Dividend, Divisor);\n    if (result.IsError) {\n        IsError = true;\n        ErrorMessage = string.Join(System.Environment.NewLine, System.Linq.Enumerable.Select(result.Errors, error => error.Description));\n    } else { Result = result.Value; }\n} catch (System.Exception exception) {\n    IsError = true;\n    ErrorMessage = \"Arithmetic operation failed unexpectedly.\";\n    app.GetRequiredService<global::Common.Logging.ILog>().Error(\"Divide numbers task failed.\", exception);\n}\nreturn true;",
+      "FK2": 1,
+      "FK11": "f91fde7f-9e74-4bb3-a787-b9dfa7eb4923",
+      "FK13": true,
+      "FK16": true,
+      "FK17": false
+    }
+  }
+}

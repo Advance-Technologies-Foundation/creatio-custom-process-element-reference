@@ -1,0 +1,13 @@
+{
+  "Descriptor": {
+    "UId": "fbb39cd8-ab38-4136-9a31-da004e5cedb6",
+    "Name": "UsrSubtractNumbersPropertiesPage",
+    "ModifiedOnUtc": "/Date(1789661164135)/",
+    "Parent": {
+      "UId": "7f8b7355-e8df-406b-9c05-074f16ff7c13",
+      "Name": "UsrArithmeticPropertiesPage"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "UsrSubtractNumbersPropertiesPage"
+  }
+}

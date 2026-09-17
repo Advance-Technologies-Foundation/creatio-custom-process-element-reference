@@ -1,0 +1,13 @@
+{
+  "Descriptor": {
+    "UId": "f91fde7f-9e74-4bb3-a787-b9dfa7eb4923",
+    "Name": "UsrDivideNumbersPropertiesPage",
+    "ModifiedOnUtc": "/Date(1789661164135)/",
+    "Parent": {
+      "UId": "7f8b7355-e8df-406b-9c05-074f16ff7c13",
+      "Name": "UsrArithmeticPropertiesPage"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "UsrDivideNumbersPropertiesPage"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Descriptor": {
+    "UId": "d3ad1be6-6c0f-4c80-a4a4-5f1f1e2df7ea",
+    "Name": "UsrAddNumbersUserTask",
+    "ModifiedOnUtc": "/Date(1789661164135)/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "Arithmetic: Add"
+  }
+}

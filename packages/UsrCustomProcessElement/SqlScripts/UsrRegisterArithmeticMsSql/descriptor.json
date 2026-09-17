@@ -1,0 +1,9 @@
+{
+  "SqlScript": {
+    "UId": "b6d1826e-91cc-482c-9f44-80496d9db9fa",
+    "Name": "UsrRegisterArithmeticMsSql",
+    "DBEngineType": 0,
+    "InstallType": 1,
+    "ModifiedOnUtc": "/Date(1789661164135)/"
+  }
+}

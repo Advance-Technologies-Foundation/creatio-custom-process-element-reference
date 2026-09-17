@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "9a7291f1-549a-408b-8ba6-c5a99d8f121e",
+    "Name": "UsrArithmetic_Multiply",
+    "ModifiedOnUtc": "\/Date(1789660340000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Arithmetic multiply reference",
+    "DependsOn": []
+  }
+}

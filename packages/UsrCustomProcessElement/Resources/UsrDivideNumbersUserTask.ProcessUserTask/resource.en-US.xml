@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Arithmetic: Divide" />
+			
+			<Item Name="Parameters.Dividend.Caption" Value="Dividend" />
+			<Item Name="Parameters.Divisor.Caption" Value="Divisor" />
+			<Item Name="Parameters.ErrorMessage.Caption" Value="Error message" />
+			<Item Name="Parameters.IsError.Caption" Value="Is error" />
+			<Item Name="Parameters.Result.Caption" Value="Result" />
+			
+			
+		<Item Name="SmallSvgImage" Type="Image" ContentType="Data" FileExtension=".svg" Value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MiIgaGVpZ2h0PSI0MiIgdmlld0JveD0iMCAwIDQyIDQyIj48cmVjdCB3aWR0aD0iNDIiIGhlaWdodD0iNDIiIHJ4PSI1IiBmaWxsPSIjMjg3QTY4Ii8+PHBhdGggZD0iTTggMTJoMTJtLTYtNnYxMm0xMS02aDEwTTggMjdsMTAgMTBtMC0xMEw4IDM3bTE3LTVoMTAiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjMwIiBjeT0iMjYiIHI9IjEuNSIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjM4IiByPSIxLjUiIGZpbGw9IndoaXRlIi8+PC9zdmc+" />
+<Item Name="LargeSvgImage" Type="Image" ContentType="Data" FileExtension=".svg" Value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MiIgaGVpZ2h0PSI0MiIgdmlld0JveD0iMCAwIDQyIDQyIj48cmVjdCB3aWR0aD0iNDIiIGhlaWdodD0iNDIiIHJ4PSI1IiBmaWxsPSIjMjg3QTY4Ii8+PHBhdGggZD0iTTggMTJoMTJtLTYtNnYxMm0xMS02aDEwTTggMjdsMTAgMTBtMC0xMEw4IDM3bTE3LTVoMTAiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjMwIiBjeT0iMjYiIHI9IjEuNSIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjM4IiByPSIxLjUiIGZpbGw9IndoaXRlIi8+PC9zdmc+" />
+<Item Name="TitleSvgImage" Type="Image" ContentType="Data" FileExtension=".svg" Value="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MiIgaGVpZ2h0PSI0MiIgdmlld0JveD0iMCAwIDQyIDQyIj48cmVjdCB3aWR0aD0iNDIiIGhlaWdodD0iNDIiIHJ4PSI1IiBmaWxsPSIjMjg3QTY4Ii8+PHBhdGggZD0iTTggMTJoMTJtLTYtNnYxMm0xMS02aDEwTTggMjdsMTAgMTBtMC0xMEw4IDM3bTE3LTVoMTAiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjMwIiBjeT0iMjYiIHI9IjEuNSIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIzMCIgY3k9IjM4IiByPSIxLjUiIGZpbGw9IndoaXRlIi8+PC9zdmc+" /></Items>
+	</Group>
+</Resources>

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "7cf883dd-f32a-43e3-96cc-d55ae96dd63e",
+    "Name": "UsrArithmetic_Divide",
+    "ModifiedOnUtc": "\/Date(1789660340000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Arithmetic divide reference",
+    "DependsOn": []
+  }
+}
