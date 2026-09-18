@@ -1,4 +1,4 @@
-param([Parameter(Mandatory)][string]$EnvironmentName)
+param([Parameter(Mandatory)][string]$EnvironmentName, [switch]$IntegrationOnly)
 $ErrorActionPreference = 'Stop'
 Push-Location (Split-Path $PSScriptRoot -Parent)
 try {
@@ -8,12 +8,15 @@ try {
     $target = $configuration.Environments.$EnvironmentName
     if (!$target) { throw "Clio environment '$EnvironmentName' is not registered." }
     $env:CREATIO_URL = $target.Uri
-    $env:CREATIO_IS_NETCORE = 'true'
+    if ($target.IsNetCore -isnot [bool]) { throw 'The Clio registration must specify Boolean IsNetCore.' }
+    $env:CREATIO_IS_NETCORE = $target.IsNetCore.ToString().ToLowerInvariant()
     $env:CREATIO_USERNAME = $target.Login
     $env:CREATIO_PASSWORD = $target.Password
     if ($env:CREATIO_ACCESS_TOKEN) { throw 'Clear CREATIO_ACCESS_TOKEN before using this registered-credentials recipe.' }
-    dotnet test tests/UsrCustomProcessElement/UsrCustomProcessElement.Tests.csproj -c dev-n8 --filter 'FullyQualifiedName~FormatText|FullyQualifiedName~Arithmetic'
-    if ($LASTEXITCODE) { throw 'Unit tests failed.' }
+    if (!$IntegrationOnly) {
+        dotnet test tests/UsrCustomProcessElement/UsrCustomProcessElement.Tests.csproj -c dev-n8 --filter 'FullyQualifiedName~FormatText|FullyQualifiedName~Arithmetic'
+        if ($LASTEXITCODE) { throw 'Unit tests failed.' }
+    }
     dotnet test tests/UsrCustomProcessElement.IntegrationTests/UsrCustomProcessElement.IntegrationTests.csproj --filter 'FullyQualifiedName~FormatTextProcessTests|FullyQualifiedName~ArithmeticProcessTests'
     if ($LASTEXITCODE) { throw 'Live process tests failed.' }
 } finally {

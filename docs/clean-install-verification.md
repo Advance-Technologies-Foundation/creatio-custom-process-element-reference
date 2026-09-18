@@ -1,4 +1,4 @@
-# PostgreSQL installation verification
+# Package installation verification
 
 ## Version 0.1.0: fresh non-FSM installation
 
@@ -10,7 +10,7 @@ Before installation, none of the five task schema UIds existed in SysProcessUser
 
 All ten live integration tests passed against the new instance. Browser verification showed Format text and a single Arithmetic toolbox entry, and the shipped selector process loaded its division page with dividend 10 and divisor 4. No separate compile, ClioGate installation, or source synchronization was needed.
 
-This proves PostgreSQL package installation for the stated build. SQL Server remains untested. Full operation switching and output-reference guards were tested on the original development instance; this clean-install run verified the shipped division page rather than repeating the full UI suite.
+This run proves PostgreSQL package installation for the stated build. SQL Server was not tested in this run. Full operation switching and output-reference guards were tested on the original development instance; this clean-install run verified the shipped division page rather than repeating the full UI suite.
 
 ## Version 0.2.0: retained-lab upgrade
 
@@ -24,4 +24,18 @@ The environment-independent `scripts/Test-PackageContract.ps1` verifies all five
 
 Browser verification after the upgrade opened the saved text process and showed its Text and Prefix process mappings. The text output selector offered only Error message and Formatted text from the task; Text and Prefix were excluded, and Boolean IsError was correctly filtered out for a text destination. The selector was cancelled without changing mappings.
 
-This is upgrade evidence, not a second clean-install claim. Both retained instances were kept. SQL Server runtime validation remains outstanding.
+This is upgrade evidence, not a second clean-install claim. Both retained instances were kept. SQL Server was validated subsequently as recorded below.
+
+## Version 0.2.0: fresh SQL Server installation and forced upgrade
+
+On 2026-09-18, Clio 8.1.0.131 deployed Creatio 10.1.784.0 / .NET Framework 4.8.9345.0 against SQL Server 2025 Express 17.0.4085.5. FSM remained off. The database was restored using Windows authentication. Initial readiness failed because the new IIS application-pool identity had no database user. Mapping that identity to the new lab database with db_owner membership enabled application startup and package DDL; no server-wide administrator role was granted. This prerequisite concerns this integrated-authentication deployment, not task registration.
+
+The exact published v0.2.0 archive above was installed through `clio push-pkg`. Before installation, none of the five registrations existed. The native installation executed `UsrRegisterArithmeticMsSql` and `UsrRegisterFormatTextMsSql`, compiled the package and completed successfully. No manual registration INSERT, ClioGate installation, FSM, or separate compilation was used. All ten live process tests passed, including four arithmetic operations, divide-by-zero handling, text formatting, Unicode and blank-input errors.
+
+A local validation copy changed only package version/timestamps and SQL-script timestamps to force native upgrade execution (version 0.2.1, not a published package release). The installer logged both MSSQL scripts as installed again. Readback confirmed exactly one row per task, with identical row IDs and captions. All ten live cases passed again. The installed text-task metadata preserved Text/Prefix as In, the three result parameters as Out, and unlimited-text ErrorMessage.
+
+Browser checks showed one Arithmetic entry plus Format text under User actions. Opening the shipped selector displayed Dividend/Divisor. Switching with the native confirmation displayed the separate Add (First addend/Second addend), Subtract (Minuend/Subtrahend), and Multiply (Multiplicand/Multiplier) pages. These switches were not saved over the imported process. Save/reopen and downstream-reference guards retain their earlier PostgreSQL evidence; this run does not extend those claims to MSSQL.
+
+The additional Clio-tooling probe from clio#1602 also installed its generated MSSQL registration and parameter page. Its test-only cross-package dependency initially assumed `Files/Bin/netstandard`; using the existing `StandalonePackageAssemblyPath` fixed .NET Framework compilation. All five probe integration cases passed. A timestamped upgrade forced its generated registration script to execute again and preserved its row ID and caption. This probe is separate from the unchanged published reference package.
+
+The integration runner now uses the registered IsNetCore value, so .NET Framework requests use the native `/0/` service routes. Its `-IntegrationOnly` option avoids claiming that local .NET 8 unit-test binaries validate the .NET Framework target. Existing local unit evidence remains 27 cases. All environments were retained.

@@ -33,7 +33,7 @@ For local unit tests, first prepare Creatio's generated schema sources and match
 pwsh ./scripts/Test-Reference.ps1 -EnvironmentName <registered-environment>
 ```
 
-The runner reads credentials privately from your local Clio registration. Integration tests execute the installed processes and do not create business records.
+The runner reads credentials and `IsNetCore` privately from your local Clio registration. Integration tests execute the installed processes and do not create business records. Use `-IntegrationOnly` to test a remote installed package without local proprietary unit-test dependencies. The default unit-test build still uses the prepared .NET 8 workspace; it does not establish unit coverage against another target runtime.
 
 Run `pwsh ./scripts/Test-PackageContract.ps1` without an environment or proprietary
 binaries to verify every exported task's explicit directions and error-output types.
@@ -43,7 +43,7 @@ their schema and parameter identities remain unchanged.
 
 ## Install on another compatible environment
 
-Use a fresh development environment with `CrtProcessDesigner` available. PostgreSQL is verified. Arithmetic also includes an authored MSSQL registration script, but SQL Server installation is not validated.
+Use a registered environment with `CrtProcessDesigner` available. Installation is verified on PostgreSQL / .NET 8 / Creatio 10.1.585.0 and SQL Server 2025 Express / .NET Framework 4.8 / Creatio 10.1.784.0. FSM is not required. The unchanged v0.2.0 release installed on the fresh MSSQL instance and passed all ten live process cases; forced script re-execution preserved all five registration rows.
 
 ```powershell
 clio compress ./packages/UsrCustomProcessElement -d ./artifacts/UsrCustomProcessElement.gz
@@ -69,6 +69,6 @@ If FSM changes require a restart, allow it to complete before synchronization. N
 
 ## Boundaries
 
-Validated for BPMN, synchronous execution, English captions, text and numeric parameters, PostgreSQL, and the stated Creatio build, including installation into a second fresh environment with FSM off. DCM, interactive waiting/resume, other database engines, older releases, and localized toolbox captions require separate validation.
+Validated for BPMN, synchronous execution, English captions, text and numeric parameters on the stated PostgreSQL and MSSQL builds, including non-FSM installation. MSSQL browser checks cover the single Arithmetic toolbox entry and all four distinct pages. DCM, interactive waiting/resume, other database engines, older releases, and localized toolbox captions require separate validation.
 
 This repository publishes the reusable snapshot of the tested lab. It does not redistribute Creatio platform assemblies, local environment settings, or investigative logs. See [verification](docs/clean-install-verification.md) and [third-party notices](THIRD-PARTY-NOTICES.md).

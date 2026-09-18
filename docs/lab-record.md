@@ -28,6 +28,6 @@ The checked-in task schemas, pages, handlers, SQL, and typed process models are 
 
 ## Limits
 
-SQL Server scripts are authored but not executed. DCM, asynchronous waiting, older Creatio versions, and multilingual captions remain unverified. The toolbox exclusion override is an internal designer extension and requires upgrade regression testing. Float2 generates decimal server properties but Single in the tested Clio process models; the live cases do not establish arbitrary decimal precision across that boundary.
+SQL Server was untested in the original run; the subsequent [MSSQL installation record](clean-install-verification.md#version-020-fresh-sql-server-installation-and-forced-upgrade) documents successful native installation, repeated registration and live tests. DCM, asynchronous waiting, older Creatio versions, and multilingual captions remain unverified. The toolbox exclusion override is an internal designer extension and requires upgrade regression testing. Float2 generates decimal server properties but Single in the tested Clio process models; the live cases do not establish arbitrary decimal precision across that boundary.
 
 Existing scaffold build warnings included optional assembly references, a System.Text.Json 8.0.0 advisory, and CreatioSDK framework compatibility. Passing tests are not a claim of a warning-free dependency stack.
