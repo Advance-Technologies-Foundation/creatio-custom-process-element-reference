@@ -152,7 +152,7 @@ This script intentionally preserves an existing caption. If you later rename the
 
 The Academy page's displayed PostgreSQL `VALUES (SELECT ...)` example is not a valid two-column insertion pattern as shown. Use the executable `INSERT ... SELECT` form above. Do not copy vendor sample SQL without running it against the target database engine.
 
-The package includes PostgreSQL and MSSQL registration scripts. Only PostgreSQL has runtime validation; SQL Server and Oracle require separate environment validation.
+The package includes PostgreSQL and MSSQL registration scripts. Both have native install and forced re-execution evidence on the builds listed in [installation verification](clean-install-verification.md). Oracle requires separate implementation and validation.
 
 ## 6. Verify the complete low-code experience
 

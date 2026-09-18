@@ -41,7 +41,7 @@ This depends on a Classic designer implementation method and needs a browser reg
 
 ## Registration and source delivery
 
-`SqlScripts/UsrRegisterArithmeticPostgreSql` and `SqlScripts/UsrRegisterArithmeticMsSql` contain idempotent after-package registration scripts. Their database-engine descriptors are PostgreSQL `2` and MSSQL `0`. PostgreSQL execution is verified in the retained lab; MSSQL is authored but not executed against a SQL Server environment.
+`SqlScripts/UsrRegisterArithmeticPostgreSql` and `SqlScripts/UsrRegisterArithmeticMsSql` contain idempotent after-package registration scripts. Their database-engine descriptors are PostgreSQL `2` and MSSQL `0`. Native installation and forced script re-execution are verified on both databases; see [installation evidence](clean-install-verification.md).
 
 The tasks were created with the existing `create-user-task` MCP tool, including explicit parameter directions. The package-owned pages, FK11 links, icons, and SQL were then authored in the workspace. The current tool's Text option does not expose unlimited text: the reference uses the platform's MaxSizeText data-value-type identity for `ErrorMessage` in metadata.
 
@@ -63,4 +63,4 @@ For general test-project setup, use Clio's published `integration-testing` guida
 
 ## Verification boundary
 
-The reference targets Creatio 10.1.585.0, .NET 8, PostgreSQL and its BPMN designer. Installation into a second fresh environment with FSM off is verified, including packaged PostgreSQL registration, the toolbox and division panel, and all ten live process tests; see [clean-install evidence](clean-install-verification.md). SQL Server installation, DCM, older designers and localized labels remain unverified. This is a published reference pattern; it does not implement new Clio MCP primitives.
+The reference is verified on Creatio 10.1.585.0 / .NET 8 / PostgreSQL and 10.1.784.0 / .NET Framework 4.8 / SQL Server 2025 Express. Both have non-FSM installation and ten live process cases; MSSQL browser checks also cover the single toolbox entry and all four distinct pages. See [installation evidence](clean-install-verification.md) for the narrower MSSQL persistence boundary. DCM, older designers and localized labels remain unverified. This is a published reference pattern; it does not implement new Clio MCP primitives.
